@@ -3,15 +3,24 @@ import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import './App.css';
 import Navbar from './components/Navbar';
+import Sidebar from './components/Sidebar'; // Ensure Sidebar is imported
 
 gsap.registerPlugin(useGSAP);
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [menu, setmenu] = useState(false);
 
   return (
     <>
-      <Navbar />
+      <Navbar
+        menu={menu}
+        setmenu={setmenu}
+      />
+
+      <Sidebar
+        menu={menu}
+        setmenu={setmenu}
+      />
     </>
   )
 }
