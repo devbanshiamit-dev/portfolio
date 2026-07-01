@@ -21,7 +21,7 @@ function Navbar({ menu, setmenu }) {
 
   return (
     <>
-      <nav className="relative h-20 flex items-center justify-between px-7 py-6 shadow-md bg-white z-50">
+      <nav id="navbar" className="relative h-20 flex items-center justify-between px-7 py-6 shadow-md bg-white z-50">
         <div className="font-bold text-2xl text-shadow-md">
           Amit.Dev
         </div>

@@ -27,13 +27,11 @@ const Sidebar = ({ menu }) => {
     );
 
     return (
-        <div>
+        <div id="sidebar">
             <div
                 ref={overlayRef}
-                className="fixed inset-0 bg-black/40 pointer-events-none"
+                className="fixed inset-0 bg-black/40 z-40 pointer-events-none"
             />
-
-            <div className="md:hidden bg-white min-h-lvh p-2">
 
                 <div ref={sidebarRef} className=" fixed top-2 left-2 h-[calc(100lvh-1rem)]
                  w-80 rounded-3xl bg-gray-200 shadow-xl z-50">
@@ -71,7 +69,6 @@ const Sidebar = ({ menu }) => {
                     </div>
                 </div>
             </div>
-        </div>
     );
 }
 

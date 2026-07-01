@@ -4,7 +4,7 @@ import { useGSAP } from '@gsap/react';
 import './App.css';
 import Navbar from './components/Navbar';
 import Sidebar from './components/Sidebar'; // Ensure Sidebar is imported
-import Mainsection from './components/Mainsection';
+import Mainsection from './components/Mainsection'; // Ensure Mainsection is imported
 
 gsap.registerPlugin(useGSAP);
 
@@ -22,7 +22,6 @@ function App() {
         menu={menu}
         setmenu={setmenu}
       />
-
       <Mainsection />
     </>
   )
